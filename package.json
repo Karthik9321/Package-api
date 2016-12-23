@@ -1,0 +1,33 @@
+{
+  "name": "post-office-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "expect": "^1.20.2",
+    "express": "^4.14.0",
+    "express-hbs": "^1.0.3",
+    "handlebars": "^4.0.6",
+    "hbs": "^4.0.1",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.2",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.4",
+    "supertest": "^2.0.1",
+    "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "handlebars": "^4.0.6",
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
