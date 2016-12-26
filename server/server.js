@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken');
 const hbs = require('hbs');
 
 var app = express();
-
 app.set('view engine', 'hbs');
 
 var {mongoose}=require('./db/mongoose');
