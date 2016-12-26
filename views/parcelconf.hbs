@@ -1,21 +1,32 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-<title>Parcel Registration Page</title>    
+<style type="text/css">
+    .boxing{width: 800px; margin: 0px auto; text-align: center;}
+    .texts{text-align: left; color: #fff;}
+	h1{background-color: #ffb366; color: #b35900; border-radius: 12px; height: 50px; padding: 20px;}
+	.container{background: url(http://oi65.tinypic.com/v3dqw6.jpg) no-repeat top / cover;}
+</style>
+<title>Parcel Registration Page</title></head>
     
-</head>
-    <body>
+<body class="container">
 
-
-    <h1>Success! Your parcel has been scheduled for pickup</h1>
-    <h3>Please find the details as specified</h3>
+<div class="boxing">
+<h1>Success! Your parcel has been scheduled for pickup</h1>
+   <div class="texts">
+ <h3>Please find the details as specified</h3>
+  
+ <p>Name of the Item: {{noi}}</p>
+ 
+   <p>Date: {{dop}}</p>
     
-    <p>Name of the Item: {{noi}}</p>
-    <p>Date: {{dop}}</p>
-    <p>Time: {{top}}</p>
-    <p>Approximate Weight of the Parcel: {{wop}}</p>
+<p>Time: {{top}}</p>
+   
+ <p>Approximate Weight of the Parcel (in KGs): {{wop}}
+</p></div>
+</div>
 </body>
 
 </html>
-    
     

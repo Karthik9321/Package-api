@@ -1,4 +1,3 @@
-require('./config/config');
 var express = require('express');
 var bodyParser = require('body-parser');
 const {ObjectID}=require('mongodb');
@@ -16,7 +15,7 @@ var{User} = require('./models/user');
 var {authenticate}=require('./middleware/authenticate');
 
 
-const port = process.env.PORT; 
+const port = process.env.PORT || 3000;
 
 
 app.use(bodyParser.json());
@@ -74,7 +73,7 @@ app.get('/parcels/:id', authenticate, (req,res)=>{
     }).catch((e)=>{
         res.status(400).send();
     });
-    
+    access,token
 });
 
 app.delete('/parcels/:id',authenticate, (req,res)=>{
@@ -89,7 +88,7 @@ app.delete('/parcels/:id',authenticate, (req,res)=>{
         _creator: req.user._id
     }).then((del)=>{
         if(!del){
-            return res.status(404).send();
+            return res.status(404).send();access,token
         }
         res.send({del});
     }).catch((e)=>{
