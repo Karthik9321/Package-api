@@ -73,7 +73,6 @@ app.get('/parcels/:id', authenticate, (req,res)=>{
     }).catch((e)=>{
         res.status(400).send();
     });
-    access,token
 });
 
 app.delete('/parcels/:id',authenticate, (req,res)=>{
@@ -88,11 +87,11 @@ app.delete('/parcels/:id',authenticate, (req,res)=>{
         _creator: req.user._id
     }).then((del)=>{
         if(!del){
-            return res.status(404).send();access,token
+            return res.status(404).send();
         }
         res.send({del});
     }).catch((e)=>{
-        res.status(404).send();
+        res.status(400).send();
     });
 });
 
